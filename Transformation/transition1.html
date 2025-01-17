@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition1</title>
+    <style>
+        /* 1second=1000milisecond */
+        button{
+            padding: 25px 30px;
+            margin-top: 250px;
+            margin-left: 400px;
+            border-radius: 40px 0px 40px 40px;
+            border: none;
+            box-shadow: opx opx 15px;
+            background-image: linear-gradient(45deg,violet,blue);
+            color: white;
+            transition-duration: 0.2s;
+            transition-property:all ;
+            transition-timing-function: linear;
+            /* transition-delay: 0.5s; */
+        }
+        button:hover{
+            border-top-right-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+  <button>DOWNLOAD NOW</button>
+</body>
+</html>

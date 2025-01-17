@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trans1</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height:300px;
+            width:250px;
+            border:1px solid;
+            margin:150px auto;
+            background-color: burlywood;
+            perspective: 400px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(./Jay\ Shree\ Ram.jpg);
+        }
+
+        .child{
+            height:298px;
+            width:248px;
+            border:1px solid;
+            text-align: center;
+            line-height: 298px;
+            background-color: aliceblue;
+            transform: rotateX(45deg);
+            animation: mirror 2s infinite linear;
+            background-image: url(./Bajrangbali.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transform-origin: top left;
+        }
+
+        @keyframes mirror{
+               from{
+                transform: rotateX(0deg);
+               }
+               to{
+                transform: rotateX(360deg);
+               }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="child">child1</div>
+    </div>
+</body>
+</html>
