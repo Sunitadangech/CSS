@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex5</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            margin: 50px auto;
+            display: flex;
+        }
+        .con1{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .con2{
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+        .con3{
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+
+        }
+        .con4{
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>column (default):wrap</h1>
+    <div class="container con1">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+    </div>
+    <h1>column-reverse:wrap</h1>
+    <div class="container con2">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+    </div>
+    <h1>column(default):wrap-reverse</h1>
+    <div class="container con3">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+    </div>
+    <h1>column-reverse:wrap-reverse</h1>
+    <div class="container con4">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+    </div>
+</body>
+</html>
+<!-- column-justify contentcheck behaviour
+flex flex-direction flex wrap
+justify content flex flow:wrapflow -->
