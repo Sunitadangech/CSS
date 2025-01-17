@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box13</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            border: 1px;
+        }
+        main div{
+            height: 300px;
+            width: 250px;
+            border: 10px solid;
+            margin: 50px auto;
+            padding: 10px;
+            background-image: linear-gradient(deeppink,blue);
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+        main div input{
+            margin-top: 20px;
+            margin-left: 12px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 20px;
+    
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <input type="text" name="" id="inp1" placeholder="NAME">
+            <br>
+            <input type="email" name="" id="inp2" placeholder="EMAIL">
+            <br>
+            <input type="submit" value="SUBMIT">
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudeo1</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            border: 1px solid black;
+        }
+
+        main menu {
+            height: 400px;
+            width: 350px;
+            border: none;
+            margin: 100px auto;
+            border-radius: 0px 40px 0px 40px;
+            box-shadow: 4px 3px 10px red;
+        }
+
+        menu:hover {
+            box-shadow: 0px 3px 5px white;
+        }
+
+        .inputF {
+            height: 30px;
+            width: 300px;
+            border: none;
+            margin: 30px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            outline: none;
+            border-radius: 20px;
+            box-shadow: 4px 3px 5px red;
+        }
+
+        .input1 {
+            margin-top: 80px;
+        }
+
+        .inputF:hover {
+            box-shadow: 0px 3px 5px white;
+        }
+
+        .btn {
+            height: 30px;
+            width: 100px;
+            border: 1px solid transparent;
+            font-size: 15px;
+            margin: 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: red;
+            box-shadow: 0px 0px 5px red;
+            margin-left: 40px;
+        }
+
+        .input::placeholder {
+            color: red;
+            line-height: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <menu>
+            <form action="">
+                <input class="inputF input1" placeholder="NAME" type="text">
+                <input class="inputF" placeholder="EMAIL" type="email">
+                <input class="btn btn1" type="submit" value="SUBMIT">
+                <input class="btn btn2" type="reset" value="RESET">
+            </form>
+        </menu>
+    </main>
+</body>
+
+</html>
