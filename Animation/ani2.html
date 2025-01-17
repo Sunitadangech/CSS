@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainAnimation2</title>
+    <style>
+        .train{
+            height:100px ;
+            width: 350px;
+            border: 1px solid;
+            margin: 30px 20px;
+            background-color: rgb(225, 29, 29);
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            animation: train1 2s 1 linear;
+            animation-name: train1;
+            text-align: center;
+            line-height: 100px;
+
+        }
+        #train1{
+            animation-fill-mode: forwards;
+        }
+        #train2{
+            animation-fill-mode: backwards;
+        }
+        #train3{
+            animation-fill-mode: both;
+        }
+        @keyframes train1{
+            from{
+                width: 150px;
+            }
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="train" id="train1">TRAIN1</div>
+    <div class="train" id="train2">TRAIN2</div>
+    <div class="train" id="train3">TRAIN3</div>
+</body>
+</html>
